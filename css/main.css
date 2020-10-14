@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial_bold.woff") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Arial";
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  margin-top: 6.4rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(35, 35, 35, 0.6);
+}
+
+.header__bar, .banner__container, .why_are_we__container, .prices__container, .work__container, .waste_disposal__container {
+  width: 98rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header__nav {
+  min-height: 6.4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__list {
+  padding: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 3.1rem;
+}
+
+.nav__link {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner::after {
+  content: "";
+  width: 7rem;
+  height: 6.4rem;
+  display: inline-block;
+  background-image: url("../img/bnnr/recycling_small.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__top {
+  height: 48rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-image: url("../img/bnnr/truck.webp");
+  background-position: 9.3rem -1.4rem;
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+
+.banner__top::before {
+  content: "";
+  width: 22rem;
+  height: 20rem;
+  margin-bottom: 66px;
+  background-image: url("../img/bnnr/recycling.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__title {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8.3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.banner__networks {
+  width: auto;
+  margin: 3.2rem auto 2.45rem;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.banner__network:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.network__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .1rem;
+  color: transparent;
+}
+
+.why_are_we__title {
+  margin: 0;
+  font-size: 4.1rem;
+  line-height: 5.5rem;
+  text-align: center;
+  color: #e21c21;
+}
+
+.why_are_we__list {
+  padding: 0;
+  margin: .7rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.why_are_we__item:nth-child(1) {
+  width: 31.9rem;
+}
+
+.why_are_we__item:nth-child(2) {
+  width: 36.5rem;
+}
+
+.why_are_we__item:nth-child(3) {
+  width: 30.2rem;
+}
+
+.item__preview {
+  width: 100%;
+  height: 12.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item__heading {
+  margin: 1.3rem 0;
+  font-size: 3.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item__list {
+  margin-top: 3.3rem;
+  padding-left: 3.65rem;
+  font-size: 2rem;
+  list-style-type: disc;
+}
+
+.item__list > *:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.preview__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prices__title {
+  margin: 6.3rem 0 0;
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.prices__subtitle {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.prices__table {
+  height: 37rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.prices__table::before {
+  content: "";
+  width: 75.9rem;
+  height: 33.6rem;
+  position: absolute;
+  left: -8rem;
+  top: 1rem;
+  z-index: -1;
+  background-image: url("../img/prices/truck.webp");
+}
+
+.table__img {
+  margin-top: 1.8rem;
+  margin-right: .9rem;
+}
+
+.work__title {
+  margin: 2rem 0;
+  font-size: 3.4rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #460000;
+}
+
+.work__pattern {
+  margin: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.waste_disposal__title {
+  margin: 4.2rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5.5rem;
+  text-align: center;
+  color: #0c8b00;
+}
+
+.waste_disposal__title span {
+  width: 50rem;
+  margin: 0 3.5rem;
+}
+
+.waste_disposal__title::before, .waste_disposal__title::after {
+  content: "";
+  width: 14.6rem;
+  height: 13.5rem;
+  display: inline-block;
+  background-image: url("../../img/waste_disposal/recycling.webp");
+  background-size: cover;
+}
+
+.waste_disposal__description {
+  margin: 2rem 0;
+  font-size: 2.7rem;
+  text-align: center;
+  color: #124d0c;
+}
+
+.waste_disposal__block {
+  margin: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.waste_disposal__preview {
+  margin: .5rem 0;
+  height: 24.3rem;
+  width: calc(50% - 2rem);
+}
+
+.waste_disposal__content {
+  width: calc(50% + 1rem);
+  font-size: 2.1rem;
+}
+
+.waste_disposal__content p {
+  margin-top: 0;
+}
+
+.waste_disposal__btn {
+  width: 19.6rem;
+  height: 5.1rem;
+  margin: auto;
+  -webkit-transform: translateX(-0.4rem);
+          transform: translateX(-0.4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../img/waste_disposal/fern.jpg");
+  background-position: center center;
+  background-size: 150%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .195rem;
+}
+
+.preview__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */

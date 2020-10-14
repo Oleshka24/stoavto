@@ -1,0 +1,85 @@
+.banner {
+    text-align: center;
+
+    &::after {
+        content: "";
+
+        width: 7rem;
+        height: 6.4rem;
+
+        display: inline-block;
+
+        background-image: url("../img/bnnr/recycling_small.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        @extend .header__bar;
+    }
+
+    &__top {
+        height: 48rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        background-image: url("../img/bnnr/truck.webp");
+        background-position: 9.3rem -1.4rem;
+        background-size: 99%;
+        background-repeat: no-repeat;
+
+        &::before {
+            content: "";
+
+            width: 22rem;
+            height: 20rem;
+            
+            margin-bottom:66px;
+
+            background-image: url("../img/bnnr/recycling.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__title {
+        margin: 0;
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 8.3rem;
+        font-weight: 700;
+
+        text-align: center;
+
+        line-height: 6rem;
+    }
+
+    &__networks {
+        width: auto;
+        margin: 3.2rem auto 2.45rem;
+        padding: 0;
+
+        display: inline-flex;
+
+        list-style-type: none;
+    }
+
+    &__network {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+.network {
+    &__link {
+        display: flex;
+        flex-direction: column;
+        font-size: .1rem;
+        color: transparent;
+    }
+}

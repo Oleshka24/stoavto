@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(35, 35, 35, 0.6);
+
+    &__bar {
+        width: 98rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    &__nav {
+        min-height: 6.4rem;
+        width: 100%;
+
+        display: flex;
+    }
+}
+
+.nav {
+    &__list {
+        padding: 0;
+        margin: auto;
+
+        display: flex;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 3.1rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        color: rgb(255, 255, 255);
+
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}

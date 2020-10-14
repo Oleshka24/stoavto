@@ -1,0 +1,39 @@
+@font-face{
+    font-family: "Arial";
+    src: url("../fonts/arial.woff") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face{
+    font-family: "Arial";
+    src: url("../fonts/arial_bold.woff") format("truetype");
+    font-style: normal; 
+    font-weight: bold; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Arial";
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    margin-top: 6.4rem;
+}
+
+@import './sections/header';
+@import './sections/banner';
+@import './sections/why_we_are';
+@import './sections/prices';
+@import './sections/work';
+@import './sections/_waste_disposal';

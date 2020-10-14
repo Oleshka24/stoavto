@@ -1,0 +1,53 @@
+.prices {
+    &__container {
+        @extend .header__bar;
+    }
+
+    &__title {
+        margin: 6.3rem 0 0;
+        
+        font-size: 4rem;
+        font-weight: normal;
+
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin: 0;
+
+        font-size: 2rem;
+        font-weight: normal;
+
+        text-align: center;
+    }
+
+    &__table {
+        height: 37rem;
+        position: relative;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        &::before {
+            content: "";
+
+            width: 75.9rem;
+            height: 33.6rem;
+
+            position: absolute;
+            left: -8rem;
+            top: 1rem;
+            z-index: -1;
+
+            background-image: url("../img/prices/truck.webp");
+        }
+    }
+}
+
+.table {
+    &__img {
+        margin-top: 1.8rem;
+        margin-right: .9rem;
+    }
+}

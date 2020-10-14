@@ -1,0 +1,24 @@
+.work {
+    &__container {
+        @extend .header__bar;
+    }
+
+    &__title {
+        margin: 2rem 0;
+
+        font-size: 3.4rem;
+        font-weight: normal;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #460000;
+    }
+
+    &__pattern {
+        margin: 2.2rem;
+        
+        display: flex;
+        justify-content: center;
+    }
+}

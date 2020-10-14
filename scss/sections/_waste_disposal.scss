@@ -1,0 +1,99 @@
+.waste_disposal {
+    &__container {
+        @extend .header__bar;
+    }
+
+    &__title {
+        margin: 4.2rem 0 2rem;
+
+        display: flex;
+        justify-content: center;
+
+        font-size: 5.5rem;
+
+        text-align: center;
+
+        color: rgb(12, 139, 0);
+
+        span {
+            width: 50rem;
+            margin: 0 3.5rem;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+
+            width: 14.6rem;
+            height: 13.5rem;
+
+            display: inline-block;
+
+            background-image: url('../../img/waste_disposal/recycling.webp');
+            background-size: cover;
+        }
+    }
+
+    &__description {
+        margin: 2rem 0;
+        font-size: 2.7rem;
+        text-align: center;
+
+        color: rgb(18, 77, 12);
+    }
+
+    &__block {
+        margin: 5rem 0;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__preview {
+        margin: .5rem 0;
+        height: 24.3rem;
+        width: calc(50% - 2rem);
+    }
+
+    &__content {
+        width: calc(50% + 1rem);
+
+        font-size: 2.1rem;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    &__btn {
+        width: 19.6rem;
+        height: 5.1rem;
+        margin: auto;
+
+        transform: translateX(-.4rem);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url("../../img/waste_disposal/fern.jpg");
+        background-position: center center;
+        background-size: 150%;
+
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        color: rgb(255, 255, 255);
+
+        text-decoration: none;
+        letter-spacing: .195rem;
+    }
+}
+
+.preview {
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
