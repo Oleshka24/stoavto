@@ -357,7 +357,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/waste_disposal/fern.jpg");
+  background-image: url("../img/waste_disposal/fern.jpg");
   background-position: center center;
   background-size: 150%;
   font-size: 1.3rem;
