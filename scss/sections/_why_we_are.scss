@@ -20,21 +20,48 @@
         margin: .7rem 0;
 
         display: flex;
+        justify-content: space-between;
 
         list-style-type: none;
     }
 
     &__item {
+        font-style: italic;
+
         &:nth-child(1) {
-            width: 31.9rem;
+            width: 33%;
+
+            .preview__img {
+                margin-left: 3.2rem;
+            }
+
+            .item__heading {
+                margin-left: 4.4rem;
+            }
         }
 
         &:nth-child(2) {
-            width: 36.5rem;
+            width: 37%;
+
+            .preview__img {
+                margin-right: 2.8rem;
+            }
+
+            .item__heading {
+                margin-right: 2.8rem;
+            }
         }
 
         &:nth-child(3) {
-            width: 30.2rem;
+            width: 29.6%;
+
+            .preview__img {
+                height: 11rem;
+            }
+
+            .item__list {
+                padding-top: 1rem;
+            }
         }
     }
 }

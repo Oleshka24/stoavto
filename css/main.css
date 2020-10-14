@@ -167,19 +167,50 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style-type: none;
 }
 
+.why_are_we__item {
+  font-style: italic;
+}
+
 .why_are_we__item:nth-child(1) {
-  width: 31.9rem;
+  width: 33%;
+}
+
+.why_are_we__item:nth-child(1) .preview__img {
+  margin-left: 3.2rem;
+}
+
+.why_are_we__item:nth-child(1) .item__heading {
+  margin-left: 4.4rem;
 }
 
 .why_are_we__item:nth-child(2) {
-  width: 36.5rem;
+  width: 37%;
+}
+
+.why_are_we__item:nth-child(2) .preview__img {
+  margin-right: 2.8rem;
+}
+
+.why_are_we__item:nth-child(2) .item__heading {
+  margin-right: 2.8rem;
 }
 
 .why_are_we__item:nth-child(3) {
-  width: 30.2rem;
+  width: 29.6%;
+}
+
+.why_are_we__item:nth-child(3) .preview__img {
+  height: 11rem;
+}
+
+.why_are_we__item:nth-child(3) .item__list {
+  padding-top: 1rem;
 }
 
 .item__preview {
@@ -221,7 +252,7 @@ body {
 }
 
 .prices__title {
-  margin: 6.3rem 0 0;
+  margin: 5.3rem 0 0;
   font-size: 4rem;
   font-weight: normal;
   text-align: center;
@@ -284,7 +315,7 @@ body {
 }
 
 .waste_disposal__title {
-  margin: 4.2rem 0 2rem;
+  margin: 3.9rem 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +329,7 @@ body {
 
 .waste_disposal__title span {
   width: 50rem;
-  margin: 0 3.5rem;
+  margin: .4rem 2.7rem 0 3.6rem;
 }
 
 .waste_disposal__title::before, .waste_disposal__title::after {
@@ -306,13 +337,22 @@ body {
   width: 14.6rem;
   height: 13.5rem;
   display: inline-block;
-  background-image: url("../../img/waste_disposal/recycling.webp");
+  background-image: url("../img/waste_disposal/recycling.webp");
   background-size: cover;
+}
+
+.waste_disposal__title::before {
+  margin: 0 .3rem 0 1rem;
+}
+
+.waste_disposal__title::after {
+  margin: 0 .3rem;
 }
 
 .waste_disposal__description {
   margin: 2rem 0;
   font-size: 2.7rem;
+  font-style: italic;
   text-align: center;
   color: #124d0c;
 }
@@ -328,13 +368,14 @@ body {
 }
 
 .waste_disposal__preview {
-  margin: .5rem 0;
   height: 24.3rem;
   width: calc(50% - 2rem);
+  margin: .5rem 0;
 }
 
 .waste_disposal__content {
   width: calc(50% + 1rem);
+  margin: .5rem 0;
   font-size: 2.1rem;
 }
 
@@ -357,9 +398,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   background-image: url("../img/waste_disposal/fern.jpg");
-  background-position: center center;
-  background-size: 150%;
+  background-position: 78% 60%;
+  background-size: 202%;
   font-size: 1.3rem;
   font-weight: bold;
   color: white;
@@ -367,10 +409,15 @@ body {
   letter-spacing: .195rem;
 }
 
-.preview__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
+.waste_disposal__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .4;
+  background-color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
