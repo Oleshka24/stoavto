@@ -1,0 +1,137 @@
+.contacts {
+    min-height: 71.5rem;
+    padding: 3rem 0;
+
+    background-image: url("../img/contacts/bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        @extend .header__bar;
+
+        width: 55rem;
+        padding: 2rem 0 2rem 2.1rem;
+
+        background-color: rgba(255, 255, 255, 0.59);
+    }
+
+    &__title {
+        margin: .7rem 0 0;
+
+        font-size: 3.4rem;
+        font-style: italic;
+
+        text-align: center;
+    }
+
+    &__description {
+        margin: 0;
+
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 900;
+
+        text-align: center;
+    }
+
+    &__block {
+        margin-top: 4.6rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+
+    &__info {
+        width: 50%;
+    }
+
+    &__form {
+        width: 50%;
+        min-height: 100%;
+        margin-top: 1rem;
+        padding: 2.5rem 1.5rem 3rem 1rem;
+
+        background-color: #fff;
+    }
+}
+
+.info {
+    &__top {
+        p {
+            margin: 2rem 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__bottom {
+        margin-top: 12rem;
+
+        font-style: italic;
+
+        line-height: 2.2rem;
+
+        text-transform: uppercase;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.form {
+    &__control {
+        width: 100%;
+        height: 3rem;
+        padding: 1rem 1rem 1rem 2.4rem;
+        margin-bottom: 2.1rem;
+
+        border-width: .1rem;
+        border-radius: 0;
+        border-color: rgb(47, 46, 46);
+
+        color: rgb(47, 46, 46);
+
+        &::placeholder {
+            color: rgb(47, 46, 46);
+        }
+
+        &:hover,
+        &:focus {
+            border-width: .2rem;
+        }
+    }
+
+    &__textarea {
+        @extend .form__control;
+
+        height: 12.6rem;
+        margin: .3rem 0 3rem;
+
+        font-size: 1.4rem;
+    }
+
+    &__submit {
+        width: 100%;
+        height: 3.6rem;
+        border-width: 0;
+
+        font-family: "font7";
+        font-size: 1.7rem;
+        font-weight: 100;
+
+        text-align: center;
+
+        color: rgb(255, 255, 255);
+
+        background-color: rgb(47, 46, 46);
+
+        cursor: pointer;
+    }
+}
