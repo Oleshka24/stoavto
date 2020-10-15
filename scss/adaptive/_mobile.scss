@@ -1,0 +1,30 @@
+.header {
+    &__nav {
+        height: 9rem;
+
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.nav {
+    &__list {
+        display: none;
+    }
+
+    &__burger {
+        width: 5rem;
+        height: 5rem;
+        border-width: .1rem;
+
+        border-color: rgba(255, 255, 255, 1);
+        border-radius: .4rem;
+
+        background-color: rgb(47, 46, 46);
+
+        display: flex;
+
+        font-size: 0.1rem;
+        color: transparent;
+    }
+}

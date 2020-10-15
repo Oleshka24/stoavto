@@ -1,4 +1,4 @@
-@import './fonts/custom_fonts.scss';
+@import './fonts/custom_fonts';
 
 *,
 *::before,
@@ -24,7 +24,11 @@ body {
 @import './sections/why_we_are';
 @import './sections/prices';
 @import './sections/work';
-@import './sections/_waste_disposal';
+@import './sections/services';
 @import './sections/about';
 @import './sections/contacts';
 @import './sections/footer';
+
+@media (max-width: 1100px) {
+    @import './adaptive/mobile';
+}

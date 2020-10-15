@@ -104,6 +104,7 @@
 
         &:hover,
         &:focus {
+            border-radius: 0;
             border-width: .2rem;
         }
     }
@@ -115,6 +116,8 @@
         margin: .3rem 0 3rem;
 
         font-size: 1.4rem;
+
+        resize: none;
     }
 
     &__submit {

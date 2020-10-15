@@ -12,18 +12,19 @@
             <section class="header__bar">
                 <nav class="header__nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Почему мы</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#why_are_we" class="nav__link">Почему мы</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Как мы работаем</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
                     </ul>
+                    <button class="nav__burger"><span>Открыть меню</span></button>
                 </nav>
             </section>
         </header>
         <main class="content">
-            <section class="banner">
+            <section class="banner" id="home">
                 <div class="banner__container">
                     <div class="banner__top"></div>
                     <h1 class="banner__title">РМ&nbsp; ЛОГИСТИКС</h1>
@@ -43,7 +44,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="why_are_we">
+            <section class="why_are_we" id="why_are_we">
                 <div class="why_are_we__container">
                     <h2 class="why_are_we__title">Почему Мы</h2>
                     <ul class="why_are_we__list">
@@ -87,7 +88,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="prices">
+            <section class="prices" id="prices">
                 <div class="prices__container">
                     <h2 class="prices__title">Наши цены</h2>
                     <h3 class="prices__subtitle">с НДС</h3>
@@ -96,7 +97,7 @@
                     </div>
                 </div>
             </section>
-            <section class="work">
+            <section class="work" id="work">
                 <div class="work__container">
                     <h2 class="work__title">Как мы работаем</h2>
                     <div class="work__pattern">
@@ -104,22 +105,22 @@
                     </div>
                 </div>
             </section>
-            <section class="waste_disposal">
-                <div class="waste_disposal__container">
-                    <h2 class="waste_disposal__title"><span>Вывоз твердых бытовых отходов</span></h2>
-                    <p class="waste_disposal__description">Вывоз ТБО крайне необходим для поддержания чистоты и порядка в городе, на предприятии, складе</p>
-                    <div class="waste_disposal__block">
-                        <div class="waste_disposal__preview">
-                            <img src="./img/waste_disposal/truck.webp" alt="Вывоз твердых бытовых отходов" class="preview__img">
+            <section class="services" id="services">
+                <div class="services__container">
+                    <h2 class="services__title"><span>Вывоз твердых бытовых отходов</span></h2>
+                    <p class="services__description">Вывоз ТБО крайне необходим для поддержания чистоты и порядка в городе, на предприятии, складе</p>
+                    <div class="services__block">
+                        <div class="services__preview">
+                            <img src="./img/services/truck.webp" alt="Вывоз твердых бытовых отходов" class="preview__img">
                         </div>
-                        <div class="waste_disposal__content">
+                        <div class="services__content">
                             <p><i>Специализированная техника и профессиональный персонал обслуживают предприятия, частный сектор и ОСМД в городе Днепр по вывозу твердых бытовых отходов. Особенно острая проблема уборки это вывоз мусора, который есть в крупных городах, где постоянно скапливается большое количество отходов различных категорий - мы помогаем решить эту проблему. Сделаем город чище вместе!</i></p>
-                            <p><a href="tel:+380672362828" class="waste_disposal__btn">Вывезти мусор</a></p>
+                            <p><a href="tel:+380672362828" class="services__btn">Вывезти мусор</a></p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__container">
                     <div class="about__head">
                         <div>
@@ -160,7 +161,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="contacts__container">
                     <h2 class="contacts__title">Закажите доставку груза сейчас</h2>
                     <p class="contacts__description">Всем новым клиентам 10% скидка на первую поставку</p>
