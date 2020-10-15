@@ -1,16 +1,4 @@
-@font-face{
-    font-family: "Arial";
-    src: url("../fonts/arial.woff") format("truetype");
-    font-style: normal; 
-    font-weight: normal; 
-}
-
-@font-face{
-    font-family: "Arial";
-    src: url("../fonts/arial_bold.woff") format("truetype");
-    font-style: normal; 
-    font-weight: bold; 
-}
+@import './fonts/custom_fonts.scss';
 
 *,
 *::before,
@@ -20,7 +8,7 @@
 
 html {
     font-size: 10px;
-    font-family: "Arial";
+    font-family: "font7";
 }
 
 body {
@@ -37,3 +25,6 @@ body {
 @import './sections/prices';
 @import './sections/work';
 @import './sections/_waste_disposal';
+@import './sections/about';
+@import './sections/contacts';
+@import './sections/footer';
