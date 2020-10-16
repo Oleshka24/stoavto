@@ -28,7 +28,7 @@
 
 .nav {
     &__list {
-        padding-top: 15rem;
+        padding: 15rem 1.5rem;
 
         position: fixed;
         top: 0;
@@ -44,6 +44,10 @@
 
         opacity: 0;
         pointer-events: none;
+
+        overflow: auto;
+
+        transition: all .1s;
     }
 
     &__item {
@@ -452,33 +456,5 @@
 .footer {
     &__bar {
         min-height: 13.5rem;
-    }
-}
-
-@keyframes nav__burger_before_line {
-    0% {
-        transform: translateY(0rem) rotateZ(0deg);
-    }
-
-    50% {
-        transform: translateY(.9rem) rotateZ(0deg);
-    }
-
-    100% {
-        transform: translateY(.9rem) rotateZ(45deg);
-    }
-}
-
-@keyframes nav__burger_after_line {
-    0% {
-        transform: translateY(0rem) rotateZ(0deg);
-    }
-
-    50% {
-        transform: translateY(-.9rem) rotateZ(0deg);
-    }
-
-    100% {
-        transform: translateY(-.9rem) rotateZ(-45deg);
     }
 }

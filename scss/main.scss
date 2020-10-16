@@ -17,8 +17,10 @@ body {
 
 .content {
     margin-top: 6.4rem;
+    overflow: hidden;
 }
 
+@import './animations/animations';
 @import './sections/header';
 @import './sections/banner';
 @import './sections/why_we_are';
