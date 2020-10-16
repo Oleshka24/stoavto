@@ -71,6 +71,7 @@
 html {
   font-size: 10px;
   font-family: "font7";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1087,6 +1088,10 @@ body {
   font-size: 1.6rem;
 }
 
+.footer__scroll_up {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .header__bar, .banner__container, .why_are_we__container, .prices__container, .work__container, .services__container, .about__container, .contacts__container, .footer__container {
     padding: 0 2.3rem;
@@ -1456,6 +1461,22 @@ body {
   }
   .footer__bar {
     min-height: 13.5rem;
+  }
+  .footer__scroll_up {
+    display: block;
+  }
+  .scroll_up__btn {
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
+    border-width: 0;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background-color: transparent;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
 }
 /*# sourceMappingURL=main.css.map */

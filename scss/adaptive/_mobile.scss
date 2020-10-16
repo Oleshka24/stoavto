@@ -464,4 +464,27 @@
     &__bar {
         min-height: 13.5rem;
     }
+
+    &__scroll_up {
+        display: block;
+    }
+}
+
+.scroll_up {
+    &__btn {
+        width: 6rem;
+        height: 6rem;
+        padding: 0;
+        border-width: 0;
+
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+
+        border-radius: 100%;
+
+        background-color: transparent;
+
+        transition: all .3s;
+    }
 }
