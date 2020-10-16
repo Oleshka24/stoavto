@@ -5,6 +5,7 @@
     background-image: url("../img/contacts/bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     &__container {
         @extend .header__bar;

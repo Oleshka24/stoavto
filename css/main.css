@@ -901,6 +901,7 @@ body {
   background-image: url("../img/contacts/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .contacts__container {
@@ -1135,6 +1136,9 @@ body {
     margin-right: 0;
     margin-bottom: 2.9rem;
   }
+  .nav__item--active .nav__link {
+    color: #c58383;
+  }
   .nav__link {
     font-size: 2.3rem;
     letter-spacing: .2rem;
@@ -1165,6 +1169,7 @@ body {
     color: transparent;
     -webkit-transition: all .1s;
     transition: all .1s;
+    cursor: pointer;
   }
   .nav__burger span, .nav__burger::before, .nav__burger::after {
     content: "";
@@ -1298,6 +1303,7 @@ body {
             transform: translateX(-1rem);
   }
   .services__title {
+    min-height: 6.5rem;
     margin: 2.3rem 0 0;
     font-size: 2.8rem;
     -webkit-box-align: center;
@@ -1305,7 +1311,7 @@ body {
             align-items: center;
   }
   .services__title::before, .services__title::after {
-    width: 12.5%;
+    width: 4.8rem;
     height: 4.3rem;
     margin: 0;
     background-position: -.2rem .1rem;

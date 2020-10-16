@@ -55,6 +55,10 @@
             margin-right: 0;
             margin-bottom: 2.9rem;
         }
+
+        &--active .nav__link {
+            color: rgb(197, 131, 131);
+        }
     }
 
     &__link {
@@ -84,6 +88,8 @@
         color: transparent;
 
         transition: all .1s;
+
+        cursor: pointer;
 
         span,
         &::before,
@@ -279,13 +285,14 @@
 
 .services {
     &__title {
+        min-height: 6.5rem;
         margin: 2.3rem 0 0;
         font-size: 2.8rem;
         align-items: center;
 
         &::before,
         &::after {
-            width: 12.5%;
+            width: 4.8rem;
             height: 4.3rem;
             margin: 0;
             background-position: -.2rem .1rem;

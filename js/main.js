@@ -48,25 +48,55 @@ function throttleScroll(e) {
 document.addEventListener("DOMContentLoaded", scrolling, false);
 
 var listItems = document.querySelectorAll(".footer, .content section");
-var firstBox = document.querySelector("#work");
-var secondBox = document.querySelector("#services");
+var listNavItems = document.querySelectorAll(".nav__item");
 
 function scrolling(e) {
-    for (var i = 0; i < listItems.length; i++) {
-        var listItem = listItems[i];
+    var i;
+    var listItem;
+
+    for (i = 0; i < listItems.length; i++) {
+        listItem = listItems[i];
 
         if (isPartiallyVisible(listItem)) {
             listItem.classList.add("show_animations");
+            listItem.classList.add("active");
+        }
+        else {
+            listItem.classList.remove("active");
         }
     }
+
+    if ($(window).width() < 1100)
+        for (i = 0; i < listItems.length; i++) {
+            listItem = listItems[i];
+
+            if (listItem.classList.contains("active")) {
+                for (var j = listNavItems.length - 1; j >= 0; j--) {
+                    if (listNavItems[j].children[0].getAttribute("href") == "#" + listItems[i].getAttribute("id")) {
+                        $(".nav__item").removeClass("nav__item--active");
+                        listNavItems[j].classList.add("nav__item--active");
+                        break;
+                    }
+                }
+                break;
+            }
+        }
 }
 
 function isPartiallyVisible(el) {
     var elementBoundary = el.getBoundingClientRect();
 
-    var top = elementBoundary.top;
+    var top = elementBoundary.top - ($(window).width() >= 1100 ? 65 : 105);
     var bottom = elementBoundary.bottom;
     var height = elementBoundary.height;
 
     return ((top + height >= 0) && (height + window.innerHeight >= bottom));
 }
+
+//  Плавный переход к якорям
+
+$('a[href^="#"]').click(function () {
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top - ($(window).width() >= 1100 ? 64 : 104) }, 800);
+    return false;
+});
