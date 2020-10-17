@@ -1,16 +1,16 @@
 .show_animations {
-    .banner__top::before,
-    .banner__title,
-    .banner__networks,
-    .why_are_we__item,
-    .prices__title,
-    .prices__subtitle,
-    .table__img,
-    .about__content,
-    .contacts__container,
-    .footer__link,
-    .services__preview,
-    .about__head::before {
+    &.banner__top::before,
+    &.banner__title,
+    &.banner__networks,
+    .why_are_we__item > &:not(.item__preview),
+    &.prices__title,
+    &.prices__subtitle,
+    &.table__img,
+    &.about__content,
+    &.contacts__container,
+    &.footer__link,
+    &.services__preview,
+    &.about__head::before {
         animation: hide_to_show 2.5s;
     }
 
@@ -18,30 +18,30 @@
         animation: left_to_right_show 2.5s;
     }
 
-    .prices__table::before {
+    &.prices__table::before {
         animation: left_to_right 2.5s;
     }
 
-    .services__content p:not(:last-child),
-    .about__body::before {
+    &.services__content p:not(:last-child),
+    &.about__body::before {
         animation: right_to_left_show 2.5s;
     }
 
-    .about__description,
-    .work__title,
-    .why_are_we__title {
+    &.about__description,
+    &.work__title,
+    &.why_are_we__title {
         animation: right_to_left_show_quick 2.5s;
     }
 
-    .why_are_we__item .preview__img,
-    .pattern__img,
-    .about__title,
-    .services__btn {
+    .why_are_we__item &.preview__img,
+    &.pattern__img,
+    &.about__title,
+    &.services__btn {
         animation: small_to_big 2.5s;
     }
 
-    .services__title::before,
-    .services__title::after {
+    &.services__title::before,
+    &.services__title::after {
         animation: speen 2.5s;
     }
 }

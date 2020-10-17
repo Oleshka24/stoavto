@@ -35,6 +35,10 @@
         &:not(:last-child) {
             margin-right: 3.1rem;
         }
+
+        &--active .nav__link {
+            color: rgb(197, 131, 131);
+        }
     }
 
     &__link {

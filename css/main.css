@@ -83,18 +83,8 @@ body {
   overflow: hidden;
 }
 
-.show_animations .banner__top::before,
-.show_animations .banner__title,
-.show_animations .banner__networks,
-.show_animations .why_are_we__item,
-.show_animations .prices__title,
-.show_animations .prices__subtitle,
-.show_animations .table__img,
-.show_animations .about__content,
-.show_animations .contacts__container,
-.show_animations .footer__link,
-.show_animations .services__preview,
-.show_animations .about__head::before {
+.show_animations.banner__top::before, .show_animations.banner__title, .show_animations.banner__networks,
+.why_are_we__item > .show_animations:not(.item__preview), .show_animations.prices__title, .show_animations.prices__subtitle, .show_animations.table__img, .show_animations.about__content, .show_animations.contacts__container, .show_animations.footer__link, .show_animations.services__preview, .show_animations.about__head::before {
   -webkit-animation: hide_to_show 2.5s;
           animation: hide_to_show 2.5s;
 }
@@ -104,34 +94,27 @@ body {
           animation: left_to_right_show 2.5s;
 }
 
-.show_animations .prices__table::before {
+.show_animations.prices__table::before {
   -webkit-animation: left_to_right 2.5s;
           animation: left_to_right 2.5s;
 }
 
-.show_animations .services__content p:not(:last-child),
-.show_animations .about__body::before {
+.show_animations.services__content p:not(:last-child), .show_animations.about__body::before {
   -webkit-animation: right_to_left_show 2.5s;
           animation: right_to_left_show 2.5s;
 }
 
-.show_animations .about__description,
-.show_animations .work__title,
-.show_animations .why_are_we__title {
+.show_animations.about__description, .show_animations.work__title, .show_animations.why_are_we__title {
   -webkit-animation: right_to_left_show_quick 2.5s;
           animation: right_to_left_show_quick 2.5s;
 }
 
-.show_animations .why_are_we__item .preview__img,
-.show_animations .pattern__img,
-.show_animations .about__title,
-.show_animations .services__btn {
+.why_are_we__item .show_animations.preview__img, .show_animations.pattern__img, .show_animations.about__title, .show_animations.services__btn {
   -webkit-animation: small_to_big 2.5s;
           animation: small_to_big 2.5s;
 }
 
-.show_animations .services__title::before,
-.show_animations .services__title::after {
+.show_animations.services__title::before, .show_animations.services__title::after {
   -webkit-animation: speen 2.5s;
           animation: speen 2.5s;
 }
@@ -422,6 +405,10 @@ body {
 
 .nav__item:not(:last-child) {
   margin-right: 3.1rem;
+}
+
+.nav__item--active .nav__link {
+  color: #c58383;
 }
 
 .nav__link {
@@ -899,10 +886,8 @@ body {
 .contacts {
   min-height: 71.5rem;
   padding: 3rem 0;
-  background-image: url("../img/contacts/bg.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 
 .contacts__container {
@@ -948,6 +933,20 @@ body {
   margin-top: 1rem;
   padding: 2.5rem 1.5rem 3rem 1rem;
   background-color: #fff;
+}
+
+.contacts__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .info__top p {
@@ -1020,6 +1019,13 @@ body {
   color: white;
   background-color: #2f2e2e;
   cursor: pointer;
+}
+
+.bg__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -1140,9 +1146,6 @@ body {
   .nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 2.9rem;
-  }
-  .nav__item--active .nav__link {
-    color: #c58383;
   }
   .nav__link {
     font-size: 2.3rem;
