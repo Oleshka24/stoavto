@@ -74,19 +74,20 @@ function scrolling(e) {
         }
     }
 
-    for (i = 0; i < listItems.length; i++) {
-        listItem = listItems[i];
+    if ($(window).width() <= 1100)
+        for (i = 0; i < listItems.length; i++) {
+            listItem = listItems[i];
 
-        if (listItem.classList.contains("active")) {
-            for (var j = listNavItems.length - 1; j >= 0; j--)
-                if (listNavItems[j].children[0].getAttribute("href") == "#" + listItems[i].getAttribute("id")) {
-                    $(".nav__item").removeClass("nav__item--active");
-                    listNavItems[j].classList.add("nav__item--active");
-                    break;
-                }
-            break;
+            if (listItem.classList.contains("active")) {
+                for (var j = listNavItems.length - 1; j >= 0; j--)
+                    if (listNavItems[j].children[0].getAttribute("href") == "#" + listItems[i].getAttribute("id")) {
+                        $(".nav__item").removeClass("nav__item--active");
+                        listNavItems[j].classList.add("nav__item--active");
+                        break;
+                    }
+                break;
+            }
         }
-    }
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         $(".scroll_up__btn").css("opacity", "1");
